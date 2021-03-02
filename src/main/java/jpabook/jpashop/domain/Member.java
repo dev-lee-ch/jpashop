@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Entity // JPA 테이블 선언
-@Getter
+@Getter //
 @Setter
 public class Member {
 
