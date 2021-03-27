@@ -17,7 +17,7 @@ public class ItemRepository {
         if (item.getId() == null) { // id가 없을 경우 신규 등록
             em.persist(item);
         } else {    // id가 있을 경우 update 처리?
-            em.merge(item);
+            em.merge(item); // object 의 모든 정보가 업데이트됨,, 실무에서는 merge 를 쓰지 않음. 더티체킹으로 변경할 내역만 지정하여 사용해야함!!
         }
     }
 
